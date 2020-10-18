@@ -11,6 +11,7 @@ module.exports = {
         spacegray: "#333646",
         darkgray: "#252734",
         white: "#e9eaeb",
+        aqua: "#64ffda"
       },
         extend: {}
   },
