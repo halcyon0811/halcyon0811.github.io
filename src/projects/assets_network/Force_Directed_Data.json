@@ -1,0 +1,386 @@
+{
+  "links": [
+    {
+      "source": "SPY",
+      "target": "KLAC",
+      "value": 0.15411665093427585
+    },
+    {
+      "source": "SPY",
+      "target": "DAIO",
+      "value": 0.16037112285436594
+    },
+    {
+      "source": "SPY",
+      "target": "ADBE",
+      "value": 0.08207868354232073
+    },
+    {
+      "source": "SPY",
+      "target": "HCSG",
+      "value": 0.14097472353384521
+    },
+    {
+      "source": "SPY",
+      "target": "HOLX",
+      "value": 0.3381834772617055
+    },
+    {
+      "source": "SPY",
+      "target": "CSCO",
+      "value": 0.1993742914555191
+    },
+    {
+      "source": "SPY",
+      "target": "SEIC",
+      "value": 0.44415584021969
+    },
+    {
+      "source": "SPY",
+      "target": "CTAS",
+      "value": 0.0907526595443422
+    },
+    {
+      "source": "SPY",
+      "target": "XLNX",
+      "value": 0.10582124141152205
+    },
+    {
+      "source": "SPY",
+      "target": "CELG",
+      "value": 0.549714325764204
+    },
+    {
+      "source": "SPY",
+      "target": "LRCX",
+      "value": 0.05181615446932708
+    },
+    {
+      "source": "KLAC",
+      "target": "DAIO",
+      "value": 0.26090363715347664
+    },
+    {
+      "source": "KLAC",
+      "target": "ADBE",
+      "value": 0.13298918086406575
+    },
+    {
+      "source": "KLAC",
+      "target": "HCSG",
+      "value": 0.18208166014581428
+    },
+    {
+      "source": "KLAC",
+      "target": "HOLX",
+      "value": 0.512681612181787
+    },
+    {
+      "source": "KLAC",
+      "target": "CSCO",
+      "value": 0.28640268218443476
+    },
+    {
+      "source": "KLAC",
+      "target": "CTAS",
+      "value": 0.20161993310012405
+    },
+    {
+      "source": "KLAC",
+      "target": "XLNX",
+      "value": 0.12247181769393778
+    },
+    {
+      "source": "KLAC",
+      "target": "LRCX",
+      "value": 0.10054702797032222
+    },
+    {
+      "source": "DAIO",
+      "target": "ADBE",
+      "value": 0.20455875655669176
+    },
+    {
+      "source": "DAIO",
+      "target": "HCSG",
+      "value": 0.25497504860184694
+    },
+    {
+      "source": "DAIO",
+      "target": "HOLX",
+      "value": 0.4715922297087882
+    },
+    {
+      "source": "DAIO",
+      "target": "CSCO",
+      "value": 0.3837923609754327
+    },
+    {
+      "source": "DAIO",
+      "target": "SEIC",
+      "value": 0.5593142820535906
+    },
+    {
+      "source": "DAIO",
+      "target": "CTAS",
+      "value": 0.2670378494663411
+    },
+    {
+      "source": "DAIO",
+      "target": "XLNX",
+      "value": 0.20605252473546487
+    },
+    {
+      "source": "DAIO",
+      "target": "CELG",
+      "value": 0.44203641858475307
+    },
+    {
+      "source": "DAIO",
+      "target": "LRCX",
+      "value": 0.09880814128052384
+    },
+    {
+      "source": "ADBE",
+      "target": "HCSG",
+      "value": 0.042682777709695974
+    },
+    {
+      "source": "ADBE",
+      "target": "HOLX",
+      "value": 0.23301093036618348
+    },
+    {
+      "source": "ADBE",
+      "target": "CSCO",
+      "value": 0.25044457860862934
+    },
+    {
+      "source": "ADBE",
+      "target": "SEIC",
+      "value": 0.38555004441721663
+    },
+    {
+      "source": "ADBE",
+      "target": "CTAS",
+      "value": 0.055844603640082924
+    },
+    {
+      "source": "ADBE",
+      "target": "XLNX",
+      "value": 0.07042180154492073
+    },
+    {
+      "source": "ADBE",
+      "target": "LRCX",
+      "value": 0.06248539991513713
+    },
+    {
+      "source": "HCSG",
+      "target": "HOLX",
+      "value": 0.24436457256750588
+    },
+    {
+      "source": "HCSG",
+      "target": "CSCO",
+      "value": 0.2875630955131352
+    },
+    {
+      "source": "HCSG",
+      "target": "SEIC",
+      "value": 0.33992111053656227
+    },
+    {
+      "source": "HCSG",
+      "target": "CTAS",
+      "value": 0.08613051642708947
+    },
+    {
+      "source": "HCSG",
+      "target": "XLNX",
+      "value": 0.11763347388292689
+    },
+    {
+      "source": "HCSG",
+      "target": "CELG",
+      "value": 0.5773682496827014
+    },
+    {
+      "source": "HCSG",
+      "target": "LRCX",
+      "value": 0.11588144136098222
+    },
+    {
+      "source": "HOLX",
+      "target": "CSCO",
+      "value": 0.3796638011875769
+    },
+    {
+      "source": "HOLX",
+      "target": "SEIC",
+      "value": 0.20062042392624768
+    },
+    {
+      "source": "HOLX",
+      "target": "CTAS",
+      "value": 0.21354559828414377
+    },
+    {
+      "source": "HOLX",
+      "target": "XLNX",
+      "value": 0.268607525270673
+    },
+    {
+      "source": "HOLX",
+      "target": "CELG",
+      "value": 0.4868758544935865
+    },
+    {
+      "source": "HOLX",
+      "target": "LRCX",
+      "value": 0.34835225537771486
+    },
+    {
+      "source": "CSCO",
+      "target": "SEIC",
+      "value": 0.46911022898152166
+    },
+    {
+      "source": "CSCO",
+      "target": "CTAS",
+      "value": 0.17839741429996958
+    },
+    {
+      "source": "CSCO",
+      "target": "XLNX",
+      "value": 0.2293789562520131
+    },
+    {
+      "source": "CSCO",
+      "target": "CELG",
+      "value": 0.5002727836180498
+    },
+    {
+      "source": "CSCO",
+      "target": "LRCX",
+      "value": 0.2392267212861695
+    },
+    {
+      "source": "SEIC",
+      "target": "CTAS",
+      "value": 0.3956688162374751
+    },
+    {
+      "source": "SEIC",
+      "target": "XLNX",
+      "value": 0.47028240988871706
+    },
+    {
+      "source": "SEIC",
+      "target": "CELG",
+      "value": 0.386241933112232
+    },
+    {
+      "source": "SEIC",
+      "target": "LRCX",
+      "value": 0.48348307478894437
+    },
+    {
+      "source": "KTCC",
+      "target": "TROW",
+      "value": 0.49608664987713846
+    },
+    {
+      "source": "CTAS",
+      "target": "XLNX",
+      "value": 0.07381690306915212
+    },
+    {
+      "source": "CTAS",
+      "target": "CELG",
+      "value": 0.5951650392014478
+    },
+    {
+      "source": "CTAS",
+      "target": "LRCX",
+      "value": 0.1158815224792471
+    },
+    {
+      "source": "XLNX",
+      "target": "LRCX",
+      "value": 0.07912597368792684
+    },
+    {
+      "source": "CELG",
+      "target": "TROW",
+      "value": 0.5446848836208555
+    },
+    {
+      "source": "CELG",
+      "target": "LRCX",
+      "value": 0.5025167369049561
+    }
+  ],
+  "nodes": [
+    {
+      "group": 2,
+      "id": "SPY"
+    },
+    {
+      "group": 2,
+      "id": "KLAC"
+    },
+    {
+      "group": 2,
+      "id": "DAIO"
+    },
+    {
+      "group": 2,
+      "id": "ADBE"
+    },
+    {
+      "group": 2,
+      "id": "HCSG"
+    },
+    {
+      "group": 3,
+      "id": "HOLX"
+    },
+    {
+      "group": 2,
+      "id": "CSCO"
+    },
+    {
+      "group": 3,
+      "id": "SEIC"
+    },
+    {
+      "group": 1,
+      "id": "KTCC"
+    },
+    {
+      "group": 2,
+      "id": "CTAS"
+    },
+    {
+      "group": 2,
+      "id": "XLNX"
+    },
+    {
+      "group": 3,
+      "id": "CELG"
+    },
+    {
+      "group": 1,
+      "id": "TROW"
+    },
+    {
+      "group": 4,
+      "id": "LYTS"
+    },
+    {
+      "group": 2,
+      "id": "LRCX"
+    }
+  ]
+}
