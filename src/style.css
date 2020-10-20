@@ -6,6 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@800&display=swap');
 #product {
     font-family: 'Roboto', sans-serif;
+}
+
+#piazolla {
+    font-family: 'Piazzolla', serif;
 }
