@@ -19,7 +19,9 @@ module.exports = {
         purplery: "#6441a5",
         purpledark: "#2a0845",
         whitesmoke: "#eeeeee",
-        almostblack:"#141313"
+        almostblack:"#141313",
+        blueish: "#000046",
+        skyblue: "#1CB5E0"
       },
         extend: {}
   },
