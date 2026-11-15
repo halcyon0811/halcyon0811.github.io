@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lida Xu — Senior Machine Learning Engineer</title>
-    <meta name="description" content="Lida Xu is a Senior Machine Learning Engineer at Meta in Cambridge, MA, building LLM agents, evaluation platforms, and production ML systems end to end.">
+    <title>Lida Xu</title>
+    <meta name="description" content="Lida Xu — Machine Learning Engineer.">
     <style>
         :root {
             --text: #1a1a1a;
             --muted: #5f6368;
             --accent: #0b57d0;
             --border: #e5e7eb;
-            --soft: #f8f9fa;
         }
 
         * {
@@ -44,65 +43,34 @@
             padding: 0 24px;
         }
 
-        /* Header */
         header {
             padding: 28px 0;
-        }
-
-        header .wrap {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            gap: 16px;
         }
 
         .wordmark {
             font-size: 20px;
             font-weight: 700;
             color: var(--text);
-            white-space: nowrap;
         }
 
-        nav {
-            display: flex;
-            gap: 24px;
+        main {
+            padding: 72px 0 96px;
         }
 
-        nav a {
-            font-size: 15px;
-            color: var(--muted);
-        }
-
-        nav a:hover {
-            color: var(--text);
-        }
-
-        /* Hero */
-        .hero {
-            padding: 64px 0 56px;
-        }
-
-        .hero h1 {
+        h1 {
             font-size: 44px;
             line-height: 1.15;
             font-weight: 700;
             letter-spacing: -0.02em;
         }
 
-        .hero .role {
+        .role {
             font-size: 20px;
             color: var(--muted);
             margin-top: 12px;
         }
 
-        .hero .intro {
-            font-size: 17px;
-            color: #333333;
-            margin-top: 20px;
-            max-width: 620px;
-        }
-
-        .hero .links {
+        .links {
             display: flex;
             flex-wrap: wrap;
             gap: 8px 24px;
@@ -110,157 +78,21 @@
             font-size: 15px;
         }
 
-        .hero .links span {
+        .links span {
             color: var(--muted);
-        }
-
-        /* Sections */
-        section {
-            padding: 40px 0;
-            border-top: 1px solid var(--border);
-        }
-
-        section h2 {
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--muted);
-            margin-bottom: 28px;
-        }
-
-        /* Jobs and education */
-        .item {
-            margin-bottom: 36px;
-        }
-
-        .item:last-child {
-            margin-bottom: 0;
-        }
-
-        .item-head {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            gap: 16px;
-        }
-
-        .item-head h3 {
-            font-size: 19px;
-            font-weight: 700;
-            line-height: 1.35;
-        }
-
-        .item-head h3 span {
-            font-weight: 400;
-            color: var(--muted);
-        }
-
-        .item-head .dates {
-            font-size: 15px;
-            color: var(--muted);
-            white-space: nowrap;
-        }
-
-        .item ul {
-            margin-top: 12px;
-            padding-left: 20px;
-        }
-
-        .item li {
-            margin-bottom: 8px;
-            color: #333333;
-        }
-
-        .item li:last-child {
-            margin-bottom: 0;
-        }
-
-        .item .detail {
-            font-size: 15px;
-            color: var(--muted);
-            margin-top: 6px;
-        }
-
-        /* Skills */
-        .skill-group {
-            margin-bottom: 20px;
-        }
-
-        .skill-group:last-child {
-            margin-bottom: 0;
-        }
-
-        .skill-group h3 {
-            font-size: 15px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            list-style: none;
-        }
-
-        .tags li {
-            font-size: 14px;
-            color: #333333;
-            background: var(--soft);
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            padding: 4px 12px;
-            margin: 0;
-        }
-
-        /* Footer */
-        footer {
-            padding: 32px 0 48px;
-            border-top: 1px solid var(--border);
-            font-size: 15px;
-            color: var(--muted);
-        }
-
-        footer .wrap {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 24px;
-            align-items: baseline;
         }
 
         @media (max-width: 600px) {
-            .hero {
-                padding: 48px 0 40px;
+            main {
+                padding: 48px 0 64px;
             }
 
-            .hero h1 {
+            h1 {
                 font-size: 34px;
             }
 
-            .hero .role {
+            .role {
                 font-size: 18px;
-            }
-
-            header .wrap {
-                flex-wrap: wrap;
-            }
-
-            nav {
-                gap: 18px;
-            }
-
-            .item-head {
-                flex-direction: column;
-                gap: 2px;
-            }
-
-            .item-head .dates {
-                white-space: normal;
-            }
-
-            section {
-                padding: 32px 0;
             }
         }
     </style>
@@ -269,145 +101,19 @@
 <body>
     <header>
         <div class="wrap">
-            <a class="wordmark" href="/">Lida Xu</a>
-            <nav>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <span class="wordmark">Lida Xu</span>
         </div>
     </header>
 
     <main class="wrap">
-        <div class="hero">
-            <h1>Lida Xu</h1>
-            <p class="role">Senior Machine Learning Engineer at Meta</p>
-            <p class="intro">Applied ML engineer with 9 years of experience building machine learning systems end to end — modeling, evaluation, and the platforms that ship them. At Meta I lead ML-driven growth work and build agentic AI platforms for debugging and evaluation. Background spans LLM agents and evaluation, production ML serving, and quantitative modeling in finance.</p>
-            <div class="links">
-                <span>Cambridge, MA</span>
-                <a href="mailto:xulida93@gmail.com">xulida93@gmail.com</a>
-                <a href="https://github.com/halcyon0811">GitHub</a>
-            </div>
-        </div>
-
-        <section id="experience">
-            <h2>Experience</h2>
-
-            <div class="item">
-                <div class="item-head">
-                    <h3>Senior Software Engineer <span>— Meta, Cambridge, MA</span></h3>
-                    <p class="dates">Jun 2022 – Present</p>
-                </div>
-                <ul>
-                    <li>Built and deployed a value model estimating the long-term value of each recommendation — an ensemble of LightGBM predictors on 156 heterogeneous tabular features — serving real-time recommendations across 5 interfaces and personalizing account access flows. Shipped via A/B tests, adding 10+ million FB MAU and improving precision by 2% at 0.9 recall.</li>
-                    <li>Pioneered the first org-wide RAG-based AI agent platform, retrieving and synthesizing domain-specific knowledge for engineers, PMs, and data scientists.</li>
-                    <li>Launched a unified agentic platform for autonomous bug detection, intelligent triage, and root cause analysis across multiple signal sources. Automated ~30 complex investigations daily across 7 product domains, achieving 90% triage accuracy and 50% time-to-mitigate improvement.</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-head">
-                    <h3>Senior Software Engineer <span>— Fidelity Investments, Boston, MA</span></h3>
-                    <p class="dates">Feb 2021 – Jun 2022</p>
-                </div>
-                <ul>
-                    <li>Designed and built a centralized investment research platform used by 6 research teams to develop, validate, and deploy quantitative models at scale.</li>
-                    <li>Partnered with quantitative researchers to refactor and productionize 10+ investment models, improving code quality, reliability, and cloud scalability.</li>
-                    <li>Architected a self-service deployment platform with one-click deployment of containerized models to AWS with automatic scaling.</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-head">
-                    <h3>Senior Quantitative Researcher / Developer <span>— Algo Depth, Cambridge, MA</span></h3>
-                    <p class="dates">Oct 2017 – Jan 2021</p>
-                </div>
-                <ul>
-                    <li>Developed and maintained a C++/Python trading system consuming real-time data pipelines and executing ML models.</li>
-                    <li>Sentiment analysis with multiple financial news sources (Seeking Alpha, RavenPack, Dow Jones, 10-K/10-Q) — NLP pipelines with TF-IDF, random forests, and fine-tuned BERT, improving sentiment classification accuracy by 13–18%.</li>
-                    <li>Crowdedness research for a large asset management firm: engineered features and built RF/XGBoost models improving prediction performance by 30%, and deployed end-to-end ML pipelines on AWS for production use.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-
-            <div class="item">
-                <div class="item-head">
-                    <h3>University of Pennsylvania <span>— M.S. in Computer and Information Technology</span></h3>
-                    <p class="dates">Sep 2020 – May 2022</p>
-                </div>
-                <p class="detail">GPA 3.93 / 4.0</p>
-            </div>
-
-            <div class="item">
-                <div class="item-head">
-                    <h3>University of Connecticut <span>— M.S. in Applied Financial Mathematics</span></h3>
-                    <p class="dates">Sep 2015 – May 2017</p>
-                </div>
-                <p class="detail">GPA 3.9 / 4.0 · Graduate Teaching Assistant</p>
-            </div>
-
-            <div class="item">
-                <div class="item-head">
-                    <h3>Nanjing Agricultural University <span>— B.S. in Agricultural Economics</span></h3>
-                    <p class="dates">Sep 2011 – Jun 2015</p>
-                </div>
-                <p class="detail">GPA 3.75 / 4.0 · National Scholarship, Outstanding Graduate (Top 3)</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-
-            <div class="skill-group">
-                <h3>ML &amp; Modeling</h3>
-                <ul class="tags">
-                    <li>RAG</li>
-                    <li>AI Agents</li>
-                    <li>Agentic Workflows</li>
-                    <li>LLM Evaluation</li>
-                    <li>PyTorch</li>
-                    <li>NLP</li>
-                    <li>Deep Learning</li>
-                    <li>Tree-based ML</li>
-                    <li>Model Evaluation</li>
-                    <li>Feature Engineering</li>
-                    <li>A/B Testing</li>
-                    <li>Portfolio Optimization</li>
-                </ul>
-            </div>
-
-            <div class="skill-group">
-                <h3>Systems &amp; Platform</h3>
-                <ul class="tags">
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>NoSQL</li>
-                    <li>REST APIs</li>
-                    <li>Distributed Systems</li>
-                    <li>Real-time Serving</li>
-                    <li>MLOps</li>
-                    <li>Kafka</li>
-                    <li>Spark</li>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>AWS</li>
-                    <li>Jenkins</li>
-                    <li>CI/CD</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact">
-        <div class="wrap">
+        <h1>Lida Xu</h1>
+        <p class="role">Machine Learning Engineer</p>
+        <div class="links">
             <span>Cambridge, MA</span>
             <a href="mailto:xulida93@gmail.com">xulida93@gmail.com</a>
             <a href="https://github.com/halcyon0811">GitHub</a>
         </div>
-    </footer>
+    </main>
 </body>
 
 </html>
