@@ -4,242 +4,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lida Xu Portfolio</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="src/style.css">
+    <title>Lida Xu — Senior Machine Learning Engineer</title>
+    <meta name="description" content="Lida Xu is a Senior Machine Learning Engineer at Meta in Cambridge, MA, building LLM agents, evaluation platforms, and production ML systems end to end.">
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --muted: #5f6368;
+            --accent: #0b57d0;
+            --border: #e5e7eb;
+            --soft: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: #ffffff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .wrap {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 28px 0;
+        }
+
+        header .wrap {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .wordmark {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            white-space: nowrap;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        nav a:hover {
+            color: var(--text);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 64px 0 56px;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            line-height: 1.15;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .role {
+            font-size: 20px;
+            color: var(--muted);
+            margin-top: 12px;
+        }
+
+        .hero .intro {
+            font-size: 17px;
+            color: #333333;
+            margin-top: 20px;
+            max-width: 620px;
+        }
+
+        .hero .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            margin-top: 28px;
+            font-size: 15px;
+        }
+
+        .hero .links span {
+            color: var(--muted);
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        /* Jobs and education */
+        .item {
+            margin-bottom: 36px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-head {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .item-head h3 {
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .item-head h3 span {
+            font-weight: 400;
+            color: var(--muted);
+        }
+
+        .item-head .dates {
+            font-size: 15px;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .item ul {
+            margin-top: 12px;
+            padding-left: 20px;
+        }
+
+        .item li {
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .item li:last-child {
+            margin-bottom: 0;
+        }
+
+        .item .detail {
+            font-size: 15px;
+            color: var(--muted);
+            margin-top: 6px;
+        }
+
+        /* Skills */
+        .skill-group {
+            margin-bottom: 20px;
+        }
+
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-group h3 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .tags li {
+            font-size: 14px;
+            color: #333333;
+            background: var(--soft);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 4px 12px;
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 32px 0 48px;
+            border-top: 1px solid var(--border);
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        footer .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            align-items: baseline;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 48px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero .role {
+                font-size: 18px;
+            }
+
+            header .wrap {
+                flex-wrap: wrap;
+            }
+
+            nav {
+                gap: 18px;
+            }
+
+            .item-head {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .item-head .dates {
+                white-space: normal;
+            }
+
+            section {
+                padding: 32px 0;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-darkslate">
-    <!-- Menu header -->
-    <header class="flex-1 md:h-16 md:flex md:items-center md:justify-between space-x-10 lg:space-x-6 md:px-32 md:py-12 md:w-11/12 pb-4">
-        <img src="/src/imgs/lidaXu.png" alt="Logo" class="flex justify-center md:justify-start h-24 px-24 md:h-32 md:px-20 py-2">
-        <div class="md:flex-1 md:text-gray-100 md:text-center md:px-4 md:py-2 md:m-2"></div>
-        <a class="text-white lg:text-2xl text-xl px-10 md:px-2 cursor-pointer" href="/index.html">Home</a>
+<body>
+    <header>
+        <div class="wrap">
+            <a class="wordmark" href="/">Lida Xu</a>
+            <nav>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- intro section-->
-
-    <!-- hero -->
-    <div class="hero bg-gray-100 py-16">
-        <!-- container -->
-        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
-            <!-- hero wrapper -->
-            <div class="hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-
-                <!-- hero text -->
-                <div class="hero-text col-span-6">
-                    <h1 class=" font-bold text-4xl md:text-6xl max-w-xl leading-tight text-white">Hi, I'm Lida Xu</h1>
-                    <hr class=" w-24 h-2 bg-aqua rounded-full mt-8">
-                    <p class="text-white text-base leading-relaxed mt-8 font-semibold md:text-xl">Senior Machine Learning Engineer at Meta, building LLM agents, evaluation platforms, and production ML systems end to end — 9 years across applied ML and quantitative finance.</p>
-                </div>
-                <!-- hero image -->
-                <div class="hero-image col-span-6">
-                    <img src="/src/imgs/Lida.png">
-                </div>
+    <main class="wrap">
+        <div class="hero">
+            <h1>Lida Xu</h1>
+            <p class="role">Senior Machine Learning Engineer at Meta</p>
+            <p class="intro">Applied ML engineer with 9 years of experience building machine learning systems end to end — modeling, evaluation, and the platforms that ship them. At Meta I lead ML-driven growth work and build agentic AI platforms for debugging and evaluation. Background spans LLM agents and evaluation, production ML serving, and quantitative modeling in finance.</p>
+            <div class="links">
+                <span>Cambridge, MA</span>
+                <a href="mailto:xulida93@gmail.com">xulida93@gmail.com</a>
+                <a href="https://github.com/halcyon0811">GitHub</a>
             </div>
         </div>
-    </div>
-    <!-- end hero -->
 
+        <section id="experience">
+            <h2>Experience</h2>
 
-    <!-- Bio -->
-    <section id="info" class="bg-white h-48">
-        <div class="md:w-4/6 max-w-sm md:max-w-screen-lg flex h-screen md:py-24 py-8 justify-center">
-            <h1 id="piazolla" class="text-almostblack md:text-5xl text-2xl">My Experience</h1>
-        </div>
-    </section>
-
-    <!-- timeline -->
-    <div class="bg-white">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-
-        <div class="min-h-screen bg-gray-100">
-
-            <div class="min-h-screen flex justify-center">
-                <div class="w-2/3 mx-auto">
-                    <div class="flex flex-row w-full">
-                        <!-- left col -->
-
-                        <div class="w-2/5 px-2 py-10">
-                            <div class="flex flex-col w-full rounded-sm bg-whitesmoke px-4 py-5">
-                                <div class="text-gray-600 mb-2 flex justify-between">
-                                    <p class="font-bold text-almostblack text-2xl hover:animate-bounce cursor-default" id="piazolla">
-                                        Meta - Senior Software Engineer
-                                    </p>
-
-                                    <div class="flex flex-row">
-                                        <!--a class="hover:animate-ping transition duration-200" target="_blank">
-                                            <i class="fa fa-link" style="color:white"></i></a>-->
-                                    </div>
-                                </div>
-                                <p class="text-almostblack text-base cursor-default" id="">
-                                - Built and deployed a value model estimating the long-term value of each recommendation — an ensemble of LightGBM predictors on 156 heterogeneous tabular features — serving real-time recommendations across 5 interfaces and personalizing account access flows. Shipped via A/B tests, adding 10+ million FB MAU and improving precision by 2% at 0.9 recall.<br><br>
-                                - Pioneered the first org-wide RAG-based AI agent platform, retrieving and synthesizing domain-specific knowledge for engineers, PMs, and data scientists.<br><br>
-                                - Launched a unified agentic platform for autonomous bug detection, intelligent triage, and root cause analysis across multiple signal sources. Automated ~30 complex investigations daily across 7 product domains, achieving 90% triage accuracy and 50% time-to-mitigate improvement.<br><br>
-                                </p>
-                            </div>
-                        </div>
-                        <!--line column-->
-                        <div class="w-1/5  flex justify-center">
-                            <div class="relative flex h-full w-1 bg-spacegray items-center justify-center">
-                                <div class="absolute flex flex-col justify-center h-24 w-24 rounded-full border-2 border-spacegray leading-none text-center z-10 bg-spacegray font-thin">
-                                    <p class="text-white font-semibold">Jun - 2022</p>
-                                    <p class="text-white font-semibold">Present</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--right column-->
-                        <div class="w-2/5 px-2 py-10 ">
-
-                        </div>
-                    </div>
-                    <div class="flex flex-row w-full">
-                        <!-- left col -->
-
-                        <div class="w-2/5 px-2 py-10">
-
-                        </div>
-                        <!--line column-->
-                        <div class="w-1/5  flex justify-center">
-                            <div class="relative flex h-full w-1 bg-spacegray items-center justify-center">
-                                <div class="absolute flex flex-col justify-center h-24 w-24 rounded-full border-2 border-spacegray leading-none text-center z-10 bg-spacegray font-thin">
-                                    <p class="text-white font-semibold">Feb - 2021</p>
-                                    <p class="text-white font-semibold">Jun - 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--right column-->
-                        <div class="w-2/5 px-2 py-10 ">
-                            <div class="flex flex-col w-full rounded-sm  bg-whitesmoke px-4 py-5">
-                                <div class="text-gray-600 mb-2 flex justify-between">
-                                    <div class="font-bold text-almostblack text-2xl hover:animate-bounce cursor-default" id="piazolla">
-                                        Fidelity Investments - Senior Software Engineer
-                                    </div>
-                                </div>
-                                <div class="text-almostblack text-base cursor-default">
-                                  - Designed and built a centralized investment research platform used by 6 research teams to develop, validate, and deploy quantitative models at scale.<br><br>
-                                  - Partnered with quantitative researchers to refactor and productionize 10+ investment models, improving code quality, reliability, and cloud scalability.<br><br>
-                                  - Architected a self-service deployment platform with one-click deployment of containerized models to AWS with automatic scaling.<br><br>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-row w-full">
-                        <!-- left col -->
-
-                        <div class="w-2/5 px-2 py-10">
-                            <div class="flex flex-col w-full rounded-sm bg-whitesmoke px-4  py-5">
-                                <div class="text-gray-600 mb-2 flex justify-between">
-                                    <div class="font-bold text-almostblack text-2xl hover:animate-bounce cursor-default" id="piazolla">
-                                        Algo Depth - Senior Quantitative Researcher/Developer
-                                    </div>
-
-                                </div>
-                                <div class="text-almostblack text-base cursor-default">
-                                  - Developed and maintained a C++/Python trading system consuming real-time data pipelines and executing ML models.<br><br>
-                                  - Sentiment analysis with multiple financial news sources (Seeking Alpha, RavenPack, Dow Jones, 10-K/10-Q) — NLP pipelines with TF-IDF, random forests, and fine-tuned BERT, improving sentiment classification accuracy by 13–18%.<br><br>
-                                  - Crowdedness research for a large asset management firm: engineered features and built RF/XGBoost models improving prediction performance by 30%, and deployed end-to-end ML pipelines on AWS for production use.<br><br>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--line column-->
-                        <div class="w-1/5  flex justify-center">
-                            <div class="relative flex h-full w-1 bg-spacegray items-center justify-center">
-                                <div class="absolute flex flex-col justify-center h-24 w-24 rounded-full border-2 border-spacegray leading-none text-center z-10 bg-spacegray font-thin">
-                                    <p class="text-white font-semibold">Oct - 2017</p>
-                                    <p class="text-white font-semibold">Jan - 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--right column-->
-                        <div class="w-2/5 px-2 py-10 ">
-
-                        </div>
-                    </div>
+            <div class="item">
+                <div class="item-head">
+                    <h3>Senior Software Engineer <span>— Meta, Cambridge, MA</span></h3>
+                    <p class="dates">Jun 2022 – Present</p>
                 </div>
-
-
+                <ul>
+                    <li>Built and deployed a value model estimating the long-term value of each recommendation — an ensemble of LightGBM predictors on 156 heterogeneous tabular features — serving real-time recommendations across 5 interfaces and personalizing account access flows. Shipped via A/B tests, adding 10+ million FB MAU and improving precision by 2% at 0.9 recall.</li>
+                    <li>Pioneered the first org-wide RAG-based AI agent platform, retrieving and synthesizing domain-specific knowledge for engineers, PMs, and data scientists.</li>
+                    <li>Launched a unified agentic platform for autonomous bug detection, intelligent triage, and root cause analysis across multiple signal sources. Automated ~30 complex investigations daily across 7 product domains, achieving 90% triage accuracy and 50% time-to-mitigate improvement.</li>
+                </ul>
             </div>
 
-        </div>
-
-
-    </div>
-
-    <!-- education -->
-    <section class="bg-white py-16">
-        <div class="max-w-5xl px-6 mx-auto">
-            <h2 class="md:text-5xl font-bold text-almostblack text-center">Education</h2>
-            <div class="mt-10 space-y-8">
-                <div class="flex flex-col w-full rounded-sm bg-whitesmoke px-4 py-5">
-                    <p class="font-bold text-almostblack text-2xl">University of Pennsylvania — M.S. in Computer and Information Technology</p>
-                    <p class="text-almostblack text-base mt-2">Sep 2020 – May 2022 · GPA 3.93 / 4.0</p>
+            <div class="item">
+                <div class="item-head">
+                    <h3>Senior Software Engineer <span>— Fidelity Investments, Boston, MA</span></h3>
+                    <p class="dates">Feb 2021 – Jun 2022</p>
                 </div>
-                <div class="flex flex-col w-full rounded-sm bg-whitesmoke px-4 py-5">
-                    <p class="font-bold text-almostblack text-2xl">University of Connecticut — M.S. in Applied Financial Mathematics</p>
-                    <p class="text-almostblack text-base mt-2">Sep 2015 – May 2017 · GPA 3.9 / 4.0 · Graduate Teaching Assistant</p>
-                </div>
-                <div class="flex flex-col w-full rounded-sm bg-whitesmoke px-4 py-5">
-                    <p class="font-bold text-almostblack text-2xl">Nanjing Agricultural University — B.S. in Agricultural Economics</p>
-                    <p class="text-almostblack text-base mt-2">Sep 2011 – Jun 2015 · GPA 3.75 / 4.0 · National Scholarship, Outstanding Graduate (Top 3)</p>
-                </div>
+                <ul>
+                    <li>Designed and built a centralized investment research platform used by 6 research teams to develop, validate, and deploy quantitative models at scale.</li>
+                    <li>Partnered with quantitative researchers to refactor and productionize 10+ investment models, improving code quality, reliability, and cloud scalability.</li>
+                    <li>Architected a self-service deployment platform with one-click deployment of containerized models to AWS with automatic scaling.</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-
-
-
-    <!-- get in contact -->
-    <div class="relative flex items-top justify-center min-h-full max-w-full sm:items-center sm:pt-0 bg-spacegray">
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-            <div class="mt-8 overflow-hidden">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-6 mr-2 bg-spacegray  sm:rounded-lg">
-                        <h1 class="text-4xl sm:text-5xl text-white font-extrabold tracking-tight">
-                            Get in touch
-                        </h1>
-                        <p class="text-normal text-lg sm:text-2xl font-medium text-white mt-2">
-                            Email me to start a conversation
-                        </p>
-
-                        <div class="flex items-center mt-8 text-white">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                            <a class="ml-4 text-md tracking-wide font-semibold w-40" target="_blank" href="https://www.google.com/maps/place/Cambridge,+MA,+USA/@42.3784207,-71.1304192,14z/data=!3m1!4b1!4m5!3m4!1s0x89e370a5cb30cc5f:0xc53a8e6489686c87!8m2!3d42.3736158!4d-71.1097335">
-                                Cambridge, Massachusetts
-                            </a>
-                        </div>
-
-
-                        <div class="flex items-center mt-2 text-white">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            <a class="ml-4 text-md tracking-wide font-semibold w-40 cursor-pointer" href="mailto:xulida93@gmail.com">
-                                Xulida93@gmail.com
-                            </a>
-                        </div>
-                    </div>
-
+            <div class="item">
+                <div class="item-head">
+                    <h3>Senior Quantitative Researcher / Developer <span>— Algo Depth, Cambridge, MA</span></h3>
+                    <p class="dates">Oct 2017 – Jan 2021</p>
                 </div>
+                <ul>
+                    <li>Developed and maintained a C++/Python trading system consuming real-time data pipelines and executing ML models.</li>
+                    <li>Sentiment analysis with multiple financial news sources (Seeking Alpha, RavenPack, Dow Jones, 10-K/10-Q) — NLP pipelines with TF-IDF, random forests, and fine-tuned BERT, improving sentiment classification accuracy by 13–18%.</li>
+                    <li>Crowdedness research for a large asset management firm: engineered features and built RF/XGBoost models improving prediction performance by 30%, and deployed end-to-end ML pipelines on AWS for production use.</li>
+                </ul>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- footer -->
-    <footer class="bg-spacegray md:h-20 h-24 flex justify-center md:py-6">
-        <p class="text-white font-md md:py-2 py-8 font-semibold">Check my Github:</p>
-        <a class="md:px-2 px-4 py-6 md:py-0" href="https://github.com/halcyon0811" target="_blank"><img src="/src/imgs/github-logo.png" alt="Github logo" class="h-8 w-8"></a>
+        <section id="education">
+            <h2>Education</h2>
+
+            <div class="item">
+                <div class="item-head">
+                    <h3>University of Pennsylvania <span>— M.S. in Computer and Information Technology</span></h3>
+                    <p class="dates">Sep 2020 – May 2022</p>
+                </div>
+                <p class="detail">GPA 3.93 / 4.0</p>
+            </div>
+
+            <div class="item">
+                <div class="item-head">
+                    <h3>University of Connecticut <span>— M.S. in Applied Financial Mathematics</span></h3>
+                    <p class="dates">Sep 2015 – May 2017</p>
+                </div>
+                <p class="detail">GPA 3.9 / 4.0 · Graduate Teaching Assistant</p>
+            </div>
+
+            <div class="item">
+                <div class="item-head">
+                    <h3>Nanjing Agricultural University <span>— B.S. in Agricultural Economics</span></h3>
+                    <p class="dates">Sep 2011 – Jun 2015</p>
+                </div>
+                <p class="detail">GPA 3.75 / 4.0 · National Scholarship, Outstanding Graduate (Top 3)</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skill-group">
+                <h3>ML &amp; Modeling</h3>
+                <ul class="tags">
+                    <li>RAG</li>
+                    <li>AI Agents</li>
+                    <li>Agentic Workflows</li>
+                    <li>LLM Evaluation</li>
+                    <li>PyTorch</li>
+                    <li>NLP</li>
+                    <li>Deep Learning</li>
+                    <li>Tree-based ML</li>
+                    <li>Model Evaluation</li>
+                    <li>Feature Engineering</li>
+                    <li>A/B Testing</li>
+                    <li>Portfolio Optimization</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h3>Systems &amp; Platform</h3>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>NoSQL</li>
+                    <li>REST APIs</li>
+                    <li>Distributed Systems</li>
+                    <li>Real-time Serving</li>
+                    <li>MLOps</li>
+                    <li>Kafka</li>
+                    <li>Spark</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>AWS</li>
+                    <li>Jenkins</li>
+                    <li>CI/CD</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="wrap">
+            <span>Cambridge, MA</span>
+            <a href="mailto:xulida93@gmail.com">xulida93@gmail.com</a>
+            <a href="https://github.com/halcyon0811">GitHub</a>
+        </div>
     </footer>
-
 </body>
 
 </html>
