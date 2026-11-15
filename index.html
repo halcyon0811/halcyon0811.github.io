@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lida Xu</title>
-    <meta name="description" content="Lida Xu — Machine Learning Engineer.">
+    <meta name="description" content="Lida Xu — Senior Machine Learning Engineer.">
     <style>
         :root {
             --text: #1a1a1a;
@@ -43,34 +43,58 @@
             padding: 0 24px;
         }
 
+        /* Header */
         header {
             padding: 28px 0;
+        }
+
+        header .wrap {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
         }
 
         .wordmark {
             font-size: 20px;
             font-weight: 700;
             color: var(--text);
+            white-space: nowrap;
         }
 
-        main {
-            padding: 72px 0 96px;
+        nav {
+            display: flex;
+            gap: 24px;
         }
 
-        h1 {
+        nav a {
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        nav a:hover {
+            color: var(--text);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 64px 0 56px;
+        }
+
+        .hero h1 {
             font-size: 44px;
             line-height: 1.15;
             font-weight: 700;
             letter-spacing: -0.02em;
         }
 
-        .role {
+        .hero .role {
             font-size: 20px;
             color: var(--muted);
             margin-top: 12px;
         }
 
-        .links {
+        .hero .links {
             display: flex;
             flex-wrap: wrap;
             gap: 8px 24px;
@@ -78,21 +102,114 @@
             font-size: 15px;
         }
 
-        .links span {
+        .hero .links span {
             color: var(--muted);
         }
 
+        /* Sections */
+        section {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        /* Experience: company + title only */
+        .job {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .job:last-child {
+            border-bottom: none;
+        }
+
+        .job h3 {
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .job h3 span {
+            font-weight: 400;
+            color: var(--muted);
+        }
+
+        .job .dates {
+            font-size: 15px;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        /* Projects placeholder */
+        .projects-note {
+            font-size: 16px;
+            color: var(--muted);
+        }
+
+        .projects-note a {
+            display: inline-block;
+            margin-top: 12px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 32px 0 48px;
+            border-top: 1px solid var(--border);
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        footer .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            align-items: baseline;
+        }
+
         @media (max-width: 600px) {
-            main {
-                padding: 48px 0 64px;
+            .hero {
+                padding: 48px 0 40px;
             }
 
-            h1 {
+            .hero h1 {
                 font-size: 34px;
             }
 
-            .role {
+            .hero .role {
                 font-size: 18px;
+            }
+
+            header .wrap {
+                flex-wrap: wrap;
+            }
+
+            nav {
+                gap: 18px;
+            }
+
+            .job {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .job .dates {
+                white-space: normal;
+            }
+
+            section {
+                padding: 32px 0;
             }
         }
     </style>
@@ -101,19 +218,59 @@
 <body>
     <header>
         <div class="wrap">
-            <span class="wordmark">Lida Xu</span>
+            <a class="wordmark" href="/">Lida Xu</a>
+            <nav>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
 
     <main class="wrap">
-        <h1>Lida Xu</h1>
-        <p class="role">Machine Learning Engineer</p>
-        <div class="links">
+        <div class="hero">
+            <h1>Lida Xu</h1>
+            <p class="role">Senior Machine Learning Engineer</p>
+            <div class="links">
+                <span>Cambridge, MA</span>
+                <a href="mailto:xulida93@gmail.com">xulida93@gmail.com</a>
+                <a href="https://github.com/halcyon0811">GitHub</a>
+            </div>
+        </div>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <h3>Meta <span>— Senior Machine Learning Engineer</span></h3>
+                <p class="dates">Jun 2022 – Present</p>
+            </div>
+
+            <div class="job">
+                <h3>Fidelity Investments <span>— Senior Software Engineer</span></h3>
+                <p class="dates">Feb 2021 – Jun 2022</p>
+            </div>
+
+            <div class="job">
+                <h3>Algo Depth <span>— Senior Quantitative Researcher / Developer</span></h3>
+                <p class="dates">Oct 2017 – Jan 2021</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p class="projects-note">Selected open-source projects — to be added.</p>
+            <p class="projects-note"><a href="https://github.com/halcyon0811">See more on GitHub &rarr;</a></p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="wrap">
             <span>Cambridge, MA</span>
             <a href="mailto:xulida93@gmail.com">xulida93@gmail.com</a>
             <a href="https://github.com/halcyon0811">GitHub</a>
         </div>
-    </main>
+    </footer>
 </body>
 
 </html>
